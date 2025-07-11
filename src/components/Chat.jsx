@@ -5,8 +5,8 @@ import Message from './Message';
 import ChatInput from './ChatInput';
 import axios from 'axios';
 
-// Use environment variable or default to localhost
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+// Use environment variable or default to deployed backend
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://backend-8c50.onrender.com';
 
 const Chat = () => {
   const [messages, setMessages] = useState([]);
